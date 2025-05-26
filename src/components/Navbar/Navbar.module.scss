@@ -1,0 +1,110 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+.nav {
+  padding: 20px 0;
+  background-color: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-border);
+  color: var(--nav-text);
+  letter-spacing: normal;
+}
+
+.navRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin-right: auto;
+  color: var(--nav-text);
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo strong {
+  font-weight: 700;
+}
+
+.navList {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  align-items: center;
+  column-gap: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.navList__link {
+  @apply relative text-gray-900 dark:text-white transition-colors duration-200;
+}
+
+.navList__link:hover {
+  opacity: 0.8;
+}
+
+.navList__link_active {
+  position: relative;
+}
+
+.navList__link_active::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 100%;
+
+  display: block;
+  height: 2px;
+  width: 100%;
+}
+
+/* Dark mode btn */
+
+.darkModeBtn {
+  order: 9;
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  width: 51px;
+  height: 26px;
+  padding: 5px;
+
+  border-radius: 50px;
+  background-color: #272727;
+}
+
+.darkModeBtn::before {
+  content: "";
+
+  position: absolute;
+  top: 1px;
+  left: 1px;
+
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  background-color: #fff;
+
+  transition: left 0.2s ease-in;
+}
+
+.darkModeBtn--active::before {
+  left: 26px;
+}
+
+.darkModeBtn__icon {
+  position: relative;
+  z-index: 9;
+}
