@@ -23,18 +23,18 @@ const Navbar = () => {
             <strong>Freelancer</strong> portfolio
           </NavLink>
           <ToggleThemeBtn />
-          <ul className={s.navList}>
+          <ul className="flex flex-wrap items-center gap-y-[10px] gap-x-[40px] text-[16px] font-medium font-[Poppins,sans-serif]">
             <li className="text-gray-900 dark:text-white">
               <NavLink to="/" className={buildLinkClass}>
                 Home
               </NavLink>
             </li>
-            <li className="text-gray-900 dark:text-white">
+            <li className="text-gray-900 dark:text-white ">
               <NavLink to="/projects" className={buildLinkClass}>
                 Projects
               </NavLink>
             </li>
-            <li className="text-gray-900 dark:text-white">
+            <li className="text-gray-900 dark:text-white ">
               <NavLink to="/contacts" className={buildLinkClass}>
                 Contacts
               </NavLink>

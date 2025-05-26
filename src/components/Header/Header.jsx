@@ -1,4 +1,3 @@
-import s from "./Header.module.scss";
 const Header = () => {
   return (
     <header className="min-h-screen flex items-center justify-center text-black bg-[radial-gradient(46%_50%_at_50%_29.6%,#f5f5f5_0%,#d0d0d0_100%)] dark:text-white dark:bg-[radial-gradient(46%_50%_at_50%_29.6%,#1d1d1f_0%,rgb(13,13,13)_100%)]">
