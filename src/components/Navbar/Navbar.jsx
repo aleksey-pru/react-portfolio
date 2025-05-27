@@ -33,12 +33,12 @@ const Navbar = () => {
                   Home
                 </NavLink>
               </li>
-              <li className="text-gray-900 dark:text-white ">
+              <li className="text-gray-900 dark:text-white">
                 <NavLink to="/projects" className={buildLinkClass}>
                   Projects
                 </NavLink>
               </li>
-              <li className="text-gray-900 dark:text-white ">
+              <li className="text-gray-900 dark:text-white">
                 <NavLink to="/contacts" className={buildLinkClass}>
                   Contacts
                 </NavLink>

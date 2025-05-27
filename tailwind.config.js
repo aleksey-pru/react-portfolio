@@ -17,6 +17,9 @@ export default {
           },
         },
       },
+      fontFamily: {
+        intel: ["Intel", "sans-serif"],
+      },
     },
   },
   plugins: [],

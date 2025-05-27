@@ -1,7 +1,8 @@
 @import "tailwindcss";
+
 @plugin "daisyui";
 @custom-variant dark (&:where(.dark, .dark *));
-@import "./reset.css";
+/* @import "./reset.css"; */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap");
 
 /* :root {
@@ -52,18 +53,6 @@
   --project-card-text: var(--white);
   --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
 } */
-
-html,
-body {
-  /* min-height: 100vh;
-
-  font-family: "DM Sans", sans-serif;
-  letter-spacing: -0.5px; */
-
-  /* Light mode */
-  /* background-color: var(--page-bg);
-  color: var(--text-color); */
-}
 
 /* General */
 
