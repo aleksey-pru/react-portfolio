@@ -1,9 +1,30 @@
 import Header from "../../components/Header/Header";
+import { motion, useScroll } from "framer-motion";
 
 const Home = () => {
+  const { scrollYProgress } = useScroll();
+  const box = {
+    width: 100,
+    height: 100,
+    backgroundColor: "#ff0088",
+    borderRadius: 5,
+  };
   return (
     <>
       <Header />
+      {/* <motion.div
+        id="scroll-indicator"
+        className="bg-black dark:bg-white"
+        style={{
+          scaleX: scrollYProgress,
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          height: 5,
+          originX: 0,
+        }}
+      /> */}
       <main className=" bg-zinc-200 dark:bg-zinc-900 py-[70px]  flex flex-col items-center gap-[40px] text-center">
         <div className=" mb-[20px] text-[40px] font-bold leading-[1.3] text-zinc-900 dark:text-white">
           My Skills

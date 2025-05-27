@@ -1,10 +1,31 @@
+import { BsSendFill } from "react-icons/bs";
 const Contacts = () => {
   return (
-    <main className="bg-zinc-200 dark:bg-zinc-900 py-[70px]">
+    <main className="bg-zinc-200 dark:bg-zinc-900 py-[70px] flex ">
       <div className="text-zinc-900 dark:text-white max-w-[1200px] mx-auto px-4">
-        <h1 className="mb-[60px] text-[60px] font-bold leading-[1.3] text-[var(--title-1)] text-center">
-          Contacts
-        </h1>
+        <h2 className="mb-[60px] text-[50px] font-bold leading-[1.3] text-[var(--title-1)] text-center">
+          Contact Me
+        </h2>
+
+        <section className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center">
+          <form className="mt-10 flex flex-col dark:text-black" action="">
+            <input
+              type="text"
+              placeholder="Your email"
+              className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+            />
+            <textarea
+              name="comment"
+              placeholder="Your message"
+              className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+              id=""
+            ></textarea>
+            <button className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none cursor-pointer transition-all focus:scale-110 hover:scale-110 hover:bg-zinc-800 hover:text-white active:scale-105 dark:bg-zinc-800 dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65">
+              Submit
+              <BsSendFill className="text-m opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
+            </button>
+          </form>
+        </section>
 
         <ul className="max-w-[570px] mx-auto flex flex-col items-center gap-[40px] text-center">
           <li className="text-[18px] leading-[1.5]">
