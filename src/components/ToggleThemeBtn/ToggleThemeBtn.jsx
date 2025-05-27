@@ -35,7 +35,7 @@ const ToggleThemeBtn = () => {
         <img src={sun} alt="Light mode" className="relative z-[9]" />
         <img src={moon} alt="Dark mode" className="relative z-[9]" />
       </button> */}
-      <label className="text-gray-900 dark:text-white flex cursor-pointer gap-2">
+      <label className="text-gray-900 dark:text-white flex items-center cursor-pointer gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
@@ -55,7 +55,7 @@ const ToggleThemeBtn = () => {
           checked={isDarkMode}
           type="checkbox"
           value="synthwave"
-          className="toggle theme-controller"
+          className="toggle theme-controller text-gray-900 dark:text-white"
         />
         <svg
           xmlns="http://www.w3.org/2000/svg"
