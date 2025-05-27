@@ -11,12 +11,9 @@ const Header = () => {
         <div className="mb-10 text-lg leading-[1.333]">
           <p>with passion for learning and creating.</p>
         </div>
-        <a
-          href="#!"
-          className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"
-        >
-          Download CV
-        </a>
+        <div className="inline-block">
+          <button className="btn btn-neutral btn-outline">Download CV</button>
+        </div>
       </div>
     </header>
   );
