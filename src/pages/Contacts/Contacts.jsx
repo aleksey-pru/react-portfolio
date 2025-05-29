@@ -19,7 +19,7 @@ const Contacts = () => {
           Contact Me
         </h2>
 
-        <section className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center">
+        <section className=" mb-20 sm:mb-28 w-[min(100%,38rem)] text-center">
           <form
             className="mt-10 flex flex-col dark:text-black"
             onSubmit={handleSubmit}
@@ -29,12 +29,12 @@ const Contacts = () => {
               type="email"
               name="email"
               placeholder="Your email"
-              className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+              className="border-2 h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
             />
             <textarea
               name="message"
               placeholder="Your message"
-              className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+              className="border-2 h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
               id=""
             ></textarea>
             <button
