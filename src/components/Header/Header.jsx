@@ -40,7 +40,10 @@ const Header = () => {
           <p>with passion for learning and creating.</p>
         </div>
         <div className="inline-block">
-          <button className="btn btn-neutral btn-outline">Download CV</button>
+          {/* <button className="btn btn-neutral btn-outline">Download CV</button> */}
+          <a href="/cv.pdf" download className="btn btn-neutral btn-outline">
+            Download CV
+          </a>
         </div>
         <div className="divider"></div>
 

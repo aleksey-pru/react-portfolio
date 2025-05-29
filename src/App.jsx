@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import { motion, useScroll } from "framer-motion";
+import { Toaster } from "react-hot-toast";
 
 const Projects = lazy(() => import("./pages/Projects/Projects"));
 const Project = lazy(() => import("./pages/Project/Project"));
@@ -46,6 +47,7 @@ function App() {
         </Routes>
       </Suspense>
       <Footer />
+      <Toaster position="top-center" reverseOrder={false} />
     </div>
   );
 }

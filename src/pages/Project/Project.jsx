@@ -23,9 +23,11 @@ const Project = () => {
           <div className="mb-[30px] font-bold text-[24px] leading-[1.3]">
             <p>{project.skills}</p>
           </div>
-          {project.gitHubLink && (
-            <BtnGitHub link="https://github.com/aleksey-pru" />
-          )}
+          <div className="mb-[30px] text-[24px] leading-[1.3]">
+            <p>{project.desc}</p>
+          </div>
+
+          <BtnGitHub link={project.gitHubLink} />
         </div>
       </div>
     </main>
