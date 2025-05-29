@@ -1,7 +1,3 @@
-import linkedin from "./../../img/icons/linkedIn.svg";
-import instagram from "./../../img/icons/instagram.svg";
-import gitHub from "./../../img/icons/gitHub.svg";
-import twitter from "./../../img/icons/twitter.svg";
 import { FaGithub, FaLinkedin, FaTelegramPlane } from "react-icons/fa";
 
 const Footer = () => {
