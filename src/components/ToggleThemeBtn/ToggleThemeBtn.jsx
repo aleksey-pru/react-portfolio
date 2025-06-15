@@ -26,15 +26,6 @@ const ToggleThemeBtn = () => {
   const toggleDarkMode = () => setIsDarkMode((prev) => !prev);
   return (
     <div>
-      {/* <button
-        onClick={toggleDarkMode}
-        className={`order-9 relative flex justify-between w-[51px] h-[26px] p-[5px] rounded-full bg-[#272727] before:content-[''] before:absolute before:top-[1px] before:left-[1px] before:block before:w-[24px] before:h-[24px] before:rounded-full before:bg-white before:transition-[left] before:duration-200 before:ease-in ${
-          isDarkMode ? "before:left-[26px]" : ""
-        }`}
-      >
-        <img src={sun} alt="Light mode" className="relative z-[9]" />
-        <img src={moon} alt="Dark mode" className="relative z-[9]" />
-      </button> */}
       <label className="text-gray-900 dark:text-white flex items-center cursor-pointer gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
